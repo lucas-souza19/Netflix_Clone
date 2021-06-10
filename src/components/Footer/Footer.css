@@ -1,0 +1,30 @@
+footer .container{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+footer nav ul li a{
+    color: white;
+}
+
+footer nav .redes-sociais{
+    border-top: 1px solid rgb(255 255 255 / 20%);
+    margin: 10px 0 10px;
+    padding: 50px 0 0;
+    text-align: center;
+}
+footer nav .redes-sociais li{
+    margin: 15px 28px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer nav .redes-sociais li a img{
+    width: 40px;
+    transition: .2s;
+    border-radius: 3px;
+}
+footer nav .redes-sociais li a:hover img{
+    transform: scale(1.2) translateY(-10px);
+}
