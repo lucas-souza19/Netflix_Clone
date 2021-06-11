@@ -60,6 +60,12 @@ export default() => {
       </section>
 
       <Footer />
+
+      {movieList.length <= 0 &&  
+        <div className="loading">
+          <img src="https://onlinegiftools.com/images/examples-onlinegiftools/netflix-stream-opaque.gif" alt="Carregando" />
+        </div>
+      }
     </div>
-  )
+  );
 }
