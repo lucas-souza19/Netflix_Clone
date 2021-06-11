@@ -1,21 +1,42 @@
+[
 {
-  "name": "netflixclone",
-  "version": "0.1.0",
-  "lockfileVersion": 1,
-  "requires": true,
-  "dependencies": {
-    "@babel/code-frame": {
-      "version": "7.14.5",
-      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.14.5.tgz",
-      "integrity": "sha512-9pzDqyc6OLDaqe+zbACgFkb6fKMNG6CObKpnYXChRsvYGyEdc7CA2BaqeOM+vOtCS5ndmJicPJhKAwYRI6UfFw==",
-      "requires": {
-        "@babel/highlight": "^7.14.5"
-      }
-    },
-    "@babel/compat-data": {
-      "version": "7.14.5",
-      "resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.14.5.tgz",
-      "integrity": "sha512-kixrYn4JwfAVPa0f2yfzc2AWti6WRRyO3XjWW5PJAvtE11qhSayrrcrEnee05KAtNaPC+EwehE8Qt1UedEVB8w=="
-    }
-  }
+  "slug": "originals",
+  "title" : "Originais do Netflix",
+  "items" : "await basicFecth(`/discover/tv/?with_network=213&language=pt-BR&api_key=${API_KEY}`)"
+},
+{
+  "slug": "trending",
+  "title" : "Recomendados para Você",
+  "items" : "await basicFecth(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)"
+},
+{
+  "slug": "toprated",
+  "title" : "Em Alta",
+  "items" : "await basicFecth(`/movie/top_rated?&language=pt-BR&api_key=${API_KEY}`)"
+},
+{
+  "slug": "action",
+  "title" : "Ação",
+  "items" : "await basicFecth(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)"
+},
+{
+  "slug": "comedy",
+  "title" : "Comédia",
+  "items" : "await basicFecth(`/discover/movie?with_genres=35&language=pt-BR&api_key=${API_KEY}`)"
+},
+{
+  "slug": "horror",
+  "title" : "Terror",
+  "items" : "await basicFecth(`/discover/movie?with_genres=27&language=pt-BR&api_key=${API_KEY}`)"
+},
+{
+  "slug": "romance",
+  "title" : "Romance",
+  "items" : "await basicFecth(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)"
+},            
+{
+  "slug": "documentary",
+  "title" : "Documentários",
+  "items" : "await basicFecth(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)"
 }
+]
