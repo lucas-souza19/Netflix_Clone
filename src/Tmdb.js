@@ -1,5 +1,6 @@
 const API_KEY = '52da42280af73ef7c3d1882ae28fa496';
 const API_BASE = 'https://api.themoviedb.org/3';
+const API_URL = 'https://my-json-server.typicode.com/lucas-souza19/Netflix_Clone';
 
 /*
 - originais da netflix
@@ -12,8 +13,10 @@ const API_BASE = 'https://api.themoviedb.org/3';
 - documentários
 */ 
 
+
+
 const basicFecth = async (endpoint) =>{
-    return (await fetch(`${API_BASE}${endpoint}`)).json();
+    return (await fetch(`${API_BASE}${endpoint}`)).json() || (await fetch(`${API_URL}${endpoint}`)).json();
 }
 
 export default {
